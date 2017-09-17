@@ -92,3 +92,23 @@ h3 {
 #logo-text strong {
   color: black;
 }
+
+.desktop-header nav {
+  margin-right: 1.5rem;
+}
+
+.desktop-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #404040;
+  transition: all 400ms;
+}
+
+.desktop-nav a:hover {
+  background-color: #ccfddf;
+}
+
+.desktop-nav a:active {
+  color: black;
+  background-color: #66b1ff;
+}
