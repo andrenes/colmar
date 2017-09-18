@@ -142,3 +142,56 @@ h3 {
     vertical-align: middle;
   }
 }
+
+/* Banner Section */
+.banner {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  align-items: center;
+  background-color: LightGray;
+}
+
+.banner-image {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.banner-text {
+  margin-left: 1rem;
+}
+
+.banner-text h1 {
+  margin: 2rem 1.5rem 2rem 0;
+}
+
+.banner-text p {
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.banner-button {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  width: 16rem;
+  max-width: 86%;
+  padding: 0.5rem 0;
+  margin: 1.5rem 1.5rem 2rem 1rem;
+  text-decoration: none;
+  background-color: #404040;
+  color: white;
+  transition: all 300ms;
+}
