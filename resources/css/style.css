@@ -401,12 +401,12 @@ h3 {
 }
 
 .course:active {
-  box-shadow: 0 -5px 15px 0 rgba(127, 255, 0, 0.5), 0 5px 15px 0 rgba(127, 255, 0, 0.5);
+  box-shadow: 0 -5px 15px 0 rgba(0, 255, 255, 0.5), 0 5px 15px 0 rgba(0, 255, 255, 0.5);
   background-color: #404040;
 }
 
 .course:active h3, .course:active span, .course:active p {
-  color: Chartreuse;
+  color: #1e90ff;
 }
 
 .course-image {
@@ -457,7 +457,95 @@ h3 {
   }
 
   .course:active {
-    box-shadow: 0 -5px 10px 0 rgba(127, 255, 0, 0.5), 0 5px 10px 0 rgba(127, 255, 0, 0.5);
-    background-color: #404040;
+    box-shadow: 0 -5px 10px 0 rgba(0, 255, 255, 0.5), 0 5px 10px 0 rgba(0, 255, 255, 0.5);
+    background-color: #1e90ff;
+  }
+}
+
+/* thesis section */
+
+.thesis {
+  position: relative;
+  top: 4rem;
+}
+
+.thesis h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.thesis-content {
+  display: flex;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.video {
+  width: 100%;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.video-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.thesis-content .stories, .thesis-content .stories .story {
+  border-style: none;
+}
+
+.thesis-content .stories .story:first-child {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .thesis .thesis-content .video-section .video-content {
+    display: none;
+  }
+  .thesis .thesis-content .stories {
+    display: none;
+  }
+  .thesis .thesis-content .video-section {
+    width: 100%;
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+
+
+/* footer section */
+
+footer {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid LightGray;
+}
+
+footer span {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 640px) {
+  footer {
+    border-style: none;
+  }
+  footer nav {
+    display: none;
   }
 }
